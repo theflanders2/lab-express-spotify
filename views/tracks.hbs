@@ -1,10 +1,10 @@
-<ul>
+<ul class="tracks-box">
   {{#each tracks}}
-    <li>
-      <h2>{{name}}</h2>
-      <audio controls src="{{preview_url}}">
-        <a href="{{preview_url}}"> Download audio </a>
-      </audio>
+    <li><h4>{{name}}</h4></li>
+    <li><audio controls src="{{preview_url}}">
+          <a href="{{preview_url}}"> Download audio </a>
+        </audio>
     </li>
   {{/each}}
 </ul>
+

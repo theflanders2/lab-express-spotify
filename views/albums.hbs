@@ -1,9 +1,15 @@
-<ul>
+{{!-- {{#each artists}} --}}
+<h2>{{artists.name}}</h2>
+{{!-- {{/each}} --}}
+
+<ul class="album-info">
   {{#each albums}}
+    <li><img class="album-image" src="{{images.0.url}}" alt="{{this.name}}"/></li>
+    <li><h3>{{name}}</h3></li>
     <li>
-      <h2>{{name}}</h2>
-      <img src="{{images.0.url}}" alt="{{this.name}}" />
-      <a href="/tracks/{{id}}">View tracks</a>
+      <button class="view-tracks-button">
+        <a class="view-tracks-link" href="/tracks/{{id}}">View tracks</a>
+      </button>
     </li>
   {{/each}}
 </ul>
